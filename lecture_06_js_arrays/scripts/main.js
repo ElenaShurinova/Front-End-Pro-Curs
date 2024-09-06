@@ -104,6 +104,15 @@ console.log( calculator(12,3, 'divide') ); // 4, потому что 12 / 3 = 4
 function findTotalLength(arr){
 
 }
- 
+// Написать функцию `hasBadWord`, она будет принимать массив 
+// строк, который нужно проверить на наличие плохого слова, 
+// и собственно плохое слово. Функция должна вернуть true, 
+// если массив содержит это слово.
 
- 
+function hasBadWord(stringsArray, badWord) {
+  return stringsArray.includes(badWord);
+}
+function dropLastElems(array, count) {
+  array.splice( array.length - count, count);
+}
+
