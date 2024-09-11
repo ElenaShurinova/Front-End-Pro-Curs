@@ -209,15 +209,16 @@ const products = [
 // 4. Поиск уцененных инструментов. Дан массив товаров. Вывести в консоль массив из товаров, 
 // на которые есть скидка (т.е. присутствует флаг `discount`), и которые относятся к категории "tools".
 function filterByPrice2(products) {
-  const result = [];
+  let result = [];
 
 products.map(elem => {
   if (elem.discount  && elem.category ==='tools') {
     result.push(elem);
 }
-console.log(result)
-  return result
+
+
 })
+return result
 }
 
 const b = filterByPrice2(products)
@@ -232,7 +233,7 @@ console.log(b);
 // колбэк с условием отбора, и возвращает первый удовлетворяющий критерию отбора элемент массива. 
 // При этом, дальше поиск не идет.
 
-// const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+const arr = [1, 2, 3, 4, 5, 6, 7, 8];
 // const filtered = arr.find( (elem) => {
 //   return elem % 3 === 0;
 // });
@@ -241,20 +242,11 @@ console.log(b);
 //  В примере выше, мы ищем первый элемент, который кратен трем.
 
 
-function customFilter(array, callback) {
-  const result = [];
+const filtered = arr.find((elem) =>{
+  return elem != 2;
 
-  array.forEach((elem, index) => {
-      // Используем find для нахождения элементов, которые удовлетворяют условию
-      if (callback(elem, index, array)) {
-          result.push(elem);
-      }
-  });
 
-  return result;
-}
+} ) 
+console.log(filtered);
 
-// Пример использования customFilter
-const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8];
-const oddNumbersCustom = customFilter(numbers, elem => elem % 2 !== 0);
-console.log(oddNumbersCustom); // [1, 3, 5, 7]
+
