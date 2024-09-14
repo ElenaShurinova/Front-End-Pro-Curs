@@ -148,3 +148,28 @@ console.log(rest);
   }, []);
   
   console.log(category);
+
+  // 6. Из массива строк `strings` получить объект, в котором ключами будут строки из массива, а значениями - длины этих строк. Пример:
+ 
+
+
+const lengths= strings.reduce((acc, str) => {
+  acc[str] = str.length;
+  return acc;
+}, {});
+
+console.log(lengths);
+
+
+// Задача "со звездочкой". Получить объект, в котором будут суммарные стоимости товаров по категориям.
+
+
+let totalByCategory = products.reduce((acc, product) => {
+  if (!acc[product.category]) {
+    acc[product.category] = 0;
+  }
+  acc[product.category] += product.price;
+  return acc;
+}, {});
+
+console.log(totalByCategory);
