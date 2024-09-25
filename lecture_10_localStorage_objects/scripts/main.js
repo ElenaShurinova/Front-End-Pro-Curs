@@ -113,15 +113,15 @@ saveTestBtn.addEventListener('click', function() {
 const firstnameInput = document.querySelector('#firstnameInput');
 const lastnameInput = document.querySelector('#lastnameInput');
 const ageInput = document.querySelector('#ageInput');
-function saveInputsData() {
+
   // ...
-  const inputsDataObject = {
+  const inputsData = {
     firstnameInput: firstnameInput.value,
     lastnameInput: lastnameInput.value,
     ageInput: ageInput.value
   };
-}
-localStorage.setItem(JSON.stringify(inputsData));
+
+localStorage.setItem('inputsData', inputsData);
 
 
   function restoreInputsData() {
