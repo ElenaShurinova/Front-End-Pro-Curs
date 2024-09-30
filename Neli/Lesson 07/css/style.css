@@ -3,9 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
-.product_card {
+
+
+
+
+.users_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.users_container > div {
     border: 1px solid black;
     border-radius: 10px;
-    padding: 10px;
-    width: 250px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }

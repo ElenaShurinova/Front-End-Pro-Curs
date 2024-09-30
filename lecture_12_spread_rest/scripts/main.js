@@ -129,3 +129,47 @@ function getNthWord(sentence, n) {
 
 console.log(getNthWord('Timon and Pumba', 2)); // "and"
 
+
+
+// Записать в переменные name, age одноименные свойства объекта torin
+
+const Norin = {
+  name: 'Torin',
+  name: 'Torin',
+  age: 201,
+  weapons: ['sword', 'hammer', 'dagger'],
+  armour: ['mitril armour', 'shield', 'helmet'],
+ 
+}
+
+const { name, age } = Norin;
+console.log(name); 
+console.log(age);
+
+// Записать в переменные dwarfName, dwarfAge свойства name, age объекта dvalin.
+
+const Dvalin = {
+  name: 'dvalin',
+  age: 232,
+  weapon: 'axe'
+};
+
+const { name: dwarfName, age: dwarfAge } = Dvalin;
+console.log(dwarfName); 
+console.log(dwarfAge); 
+
+//  Записать в переменную melee значение свойства torin.skills.melee.
+const { skills: { melee } } = torin;
+console.log(melee);
+
+// Усложним задачу. Теперь нам нужно записать это в переменные `torinsMelee` - то есть использовать алиасы.
+
+const { skills: { melee: torinsMelee } } = torin;
+console.log(torinsMelee);
+
+
+// Еще усложним (задача "со звездочкой"). Теперь нужно определить переменные `secondWeapon`, `secondArmour`, и в них записать второе оружие и второй элемент брони Торина.
+
+const { weapons: [, secondWeapon], armour: [, secondArmour] } = torin;
+console.log(secondWeapon); 
+console.log(secondArmour);
