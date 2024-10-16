@@ -1,16 +1,31 @@
-fetch('https://jsonplaceholder.typicode.com/userrs')
-.then(response => response.json())
-.then(json => renderUsers(json))
+// let a = 30;
 
-const userContainer = document.querySelector('.users_container');
-
-const renderUser = json => {
-    json.forEach(elem => {
-        
-    })
-}
+// setTimeout(() => {
+//     a = 10;
+//     console.log(a); // 10
+// }, 3000);
 
 
+// const promise = new Promise((res, rej) => {
+//     setTimeout(() => {
+//         res(a = 10)
+//     }, 3000)
+// })
+// .then(() => console.log(a)); // 10
+
+// console.log(a); // 30
+
+// promise.then()
+
+// Обработчики промиса:
+    // .then() - успешный промис
+    // .catch() - неуспешный промис
+    // .finally() - любой промис
+
+
+
+
+// FETCH запрос
 fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
     .then(json => renderUsers(json))
@@ -31,3 +46,5 @@ const renderUsers = json => {
         usersContainer.append(cardElem)
     })
 }
+
+// Для каждого объекта из полученного массива создать карточку (див) с двумя параграфами (name, username)
