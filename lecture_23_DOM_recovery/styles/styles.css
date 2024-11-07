@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    width: 100%;
+}
+.slidesContainer{
+    min-width: 300px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagesContainer {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+  
+  
+  
+  
+  
+  /* DOTS */
+.dotsContainer {
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
