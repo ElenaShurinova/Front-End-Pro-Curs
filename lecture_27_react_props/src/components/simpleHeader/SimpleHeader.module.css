@@ -1,0 +1,16 @@
+.info {
+    background-color: lightgreen;
+    color: white;
+  }
+  
+  .warning {
+    background-color: darkgoldenrod;
+    color: white;
+  }
+  
+  .alert {
+    background-color: lightcoral;
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
