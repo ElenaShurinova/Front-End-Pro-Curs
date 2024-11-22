@@ -1,0 +1,37 @@
+
+  .textField {
+   
+   
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+
+  .errorField {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .helpText {
+    color: grey;
+    font-size: 12px;
+  }
+  
+  .textFieldLabel {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .small {
+    width: 30%;
+  }
+  
+  .medium {
+    width: 65%;
+  }
+  
+  .large {
+    width: 100%;
+  }
