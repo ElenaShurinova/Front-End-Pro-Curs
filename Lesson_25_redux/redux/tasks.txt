@@ -1,0 +1,4 @@
+1. npm i redux react-redux
+2. создать store
+3. подключить store к App
+4. создать usersReducer и добавить его в rootReducer
